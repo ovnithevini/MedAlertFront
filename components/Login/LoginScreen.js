@@ -51,13 +51,13 @@ const LoginScreen = ({ navigation }) => {
     return (
         <KeyboardAvoidingView style={[css.container, css.darkbg]}>
 
-            <view style={css.logo_login}>
+            <View style={css.logo_login}>
                 <Image
                     source={require('../../assets/Login/logo.png')}
                     style={css.logo}
                 />
                 <Text style={css.login_title}>MedAlert</Text>
-            </view>
+            </View>
 
             {showAlert && (
                 <Animated.View style={[css.alertContainer, { opacity: fadeAnim }]}>
@@ -95,14 +95,15 @@ const LoginScreen = ({ navigation }) => {
 
                 <TouchableOpacity style={css.googleButton} onPress={handleLogin}>
                     <Image
-                        source={require('../../assets/login/google.png')}
+                        source={require('../../assets/Login/google.png')}
                         style={css.googleIcon}
                     />
                     <Text style={css.googleButtonText}>Conta Google</Text>
                 </TouchableOpacity>
+                
                 <View style={css.checkboxContainer}>
-                    <Text style={css.checkboxText2}>Clicando em entrar, você concorda com nossos
-                    <Text style={css.checkboxText1}>Termos de Serviço</Text> e
+                    <Text style={css.checkboxText2}> Clicando em entrar, você concorda com nossos
+                    <Text style={css.checkboxText1}> Termos de Serviço </Text> e
                     <Text style={css.checkboxText1}> Política de Privacidade </Text> </Text>
                 </View>
 
